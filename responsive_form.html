@@ -1,0 +1,72 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<link href="responsive_style.css" type="text/css" rel="stylesheet"/>
+<script src="C:\Users\SHRI HARRSHA\Desktop\ep project\java.js"></script>
+
+<script>
+			function check(){
+				
+				var uname = document.getElementById('username');
+				var pswd = document.getElementById('password');
+				
+				pswd = pswd.value + "";
+				uname = uname.value + "";
+				
+				
+				
+				if(uname.length == " "){
+					alert("Please enter your username");
+				}
+				
+				if(uname.length > 0 && uname.length < 6){
+					   alert('Invalid username');
+			   }
+			   
+				if(pswd.length == " "){
+					alert("Please enter your password");
+				}
+				
+			   if(pswd.length > 0 && pswd.length < 6){
+					   alert('Invalid password');
+			   }
+				   
+				
+			}
+		</script>
+</head>
+
+<body>
+<h1 class="caption" style="text-align: center">Vehicle Rental Management System</h1>
+<h3 class="properties" style="text-align: center">Range Rovers - Mercedes Benz - wolkswagen</h3>
+<h3 style="text-align:center; color: #000099; font-weight:bold; text-decoration:underline">Login Area</h3>
+<marquee><img src="range.jpg" width="200" height="120">
+<img src="benz.jpg" width="200" height="120">
+<img src="pass.jpg" width="200" height="120"></marquee>
+
+<div class="login-page">
+  <div class="form">
+    <form class="register-form">
+      <input type="text" placeholder="name"/>
+      <input type="password" placeholder="password"/>
+      <input type="text" placeholder="email address"/>
+      <button>create</button>
+      <p class="message">Already registered? <a href="#">Sign In</a></p>
+    </form>
+    <form action ="C:\Users\SHRI HARRSHA\Desktop\ep project\book.html" class="login-form">
+      <input type="text" placeholder="username"/>
+      <input type="password" placeholder="password"/>
+<button id="myButton" class="float-left type="submit"  onclick ="check()";>
+login &#10004; &#10004;</a></button><onclick ="check";>
+
+
+      <p class="message">Not registered? <a href="C:\Users\SHRI HARRSHA\Desktop\ep project\sign up.html">Create an account &#9998 &#9998 &#9998;</a></p>
+
+    
+
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
